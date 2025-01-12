@@ -68,15 +68,15 @@ const MobilePage: React.FC = () => {
   return (
     <div className="flex  w-screen flex-col">
       <section className="flex items-center justify-center py-2 shadow-md">
-        <img src={logo} className="mr-3 h-16 w-16" alt="Qwerty Learner Logo" />
-        <h1 className="text-2xl font-bold text-primary">Qwerty Learner</h1>
+        <img src={logo} className="mr-3 h-16 w-16" alt="KeyGuru Logo" />
+        <h1 className="text-2xl font-bold text-primary">KeyGuru</h1>
       </section>
 
       <section className="relative">
         <Flow />
         <div className="absolute top-10  flex w-full  flex-col items-center justify-center">
           <h1 className="animate__animated animate__zoomIn bg-gradient-to-b from-white to-[#dee0ff] bg-clip-text text-3xl font-bold text-transparent">
-            为键盘工作者设计的软件
+            敲敲键盘，英语自来。
           </h1>
           <h2
             className="animate__animated animate__zoomIn mt-5 text-sm font-bold text-white"
