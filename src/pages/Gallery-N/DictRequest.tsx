@@ -25,21 +25,9 @@ export default function DictRequest() {
           onClose={onClosePanel}
         >
           <p className="text-sm text-gray-600 dark:text-gray-300">
-            如果您有相关的编程基础，可以参考
-            <a
-              href="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/toBuildDict.md"
-              className="px-2 text-blue-500"
-              target="_blank"
-              rel="noreferrer"
-            >
-              导入词典
-            </a>
-            ，给项目贡献新的词典。
-            <br />
-            <br />
             如果您没有相关的编程基础，可以将您的字典需求发送邮件到{' '}
-            <a href="mailto:me@kaiyi.cool" className="px-2 text-blue-500" aria-label="发送邮件到 me@kaiyi.cool">
-              me@kaiyi.cool
+            <a href="mailto:me@kaiyi.cool" className="px-2 text-blue-500" aria-label="发送邮件到 myluke12@gmail.com">
+              myluke12@gmail.com
             </a>
             ，或者在网页底部添加我们的用户社群进行反馈。
           </p>
