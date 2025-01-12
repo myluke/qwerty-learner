@@ -1,5 +1,5 @@
 run:
-	docker-compose -f ./docker-compose.yaml up -d
+	docker-compose -f ./docker-compose.yaml up -d --build
 
 stop:
 	docker-compose -f ./docker-compose.yaml down
