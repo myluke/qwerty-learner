@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      ;(function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&')
+            })
+            .join('?')
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash)
+        }
+      })(window.location)
+    </script>
+
+    <title>KeyGuru — 敲敲键盘，英语自来，指尖上的思维变化。</title>
+    <meta
+      name="description"
+      content="KeyGuru, 敲敲键盘，英语自来，指尖上的思维变化。 / Tap the keyboard, and English comes naturally. The transformation of thinking at your fingertips.    "
+    />
+    <meta name="keywords" content="KeyGuru, 打字练习软件, 单词记忆工具, 英语学习, 背单词, 英语肌肉记忆锻炼, 键盘工作者, 免费背单词软件" />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#818CF8" />
+    <link rel="source" href="https://github.com/Kaiyiwing/qwerty-learner" />
+    <link rel="source" href="https://qwerty.kaiyi.cool" />
+    <link rel="manifest" href="./manifest.json" />
+
+    <script>
+      // Dark mode init
+      if (
+        ('state' in localStorage && JSON.parse(localStorage.state).darkMode) ||
+        (!('state' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark')
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index-f3d966e4.js"></script>
+    <link rel="stylesheet" href="./assets/index-d06b87f5.css">
+  </head>
+  <body>
+    <noscript>
+      <div>You need to enable JavaScript to run KeyGuru.</div>
+      <div>你需要启用 JavaScript 来运行 KeyGuru。</div>
+    </noscript>
+    <div id="root"></div>
+    
+  </body>
+</html>
